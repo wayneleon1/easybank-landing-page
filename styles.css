@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+/* General Css */
 
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 :root {
   /* Primary  */
   --DarkBlue: hsl(233, 26%, 24%);
@@ -56,12 +57,28 @@ a {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2BB7DA", endColorstr="#31D35C", GradientType=1);
 }
 
+/* Button styles */
+.btn {
+  padding: 14px 32px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+/* Desktop Navbar */
 nav {
   background-color: white;
   padding: 18px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 nav ul {
@@ -72,7 +89,6 @@ nav ul {
 nav ul li {
   position: relative;
 }
-
 nav ul li::after {
   content: "";
   position: absolute;
@@ -104,16 +120,21 @@ nav ul li a:hover {
   color: var(--DarkBlue);
 }
 
-.btn {
-  padding: 14px 32px;
-  color: white;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: opacity 0.4s ease-in-out;
+/* Hero Section */
+#hero {
+  width: 100%;
+  display: flex;
 }
-.btn:hover {
-  opacity: 0.7;
+#hero > div {
+  flex-basis: 50%;
+}
+
+.hero_image-container {
+  width: 100%;
+  height: 100%;
+}
+.hero_image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
