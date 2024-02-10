@@ -123,7 +123,6 @@ nav ul li a:hover {
 /* Hero Section */
 #hero {
   width: 100%;
-  height: 100vh;
   display: flex;
   background: var(--VeryLightGray);
 }
@@ -156,4 +155,53 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Services Section */
+#services {
+  background: var(--LightGrayishBlue);
+}
+.text-title h2 {
+  font-size: 28px;
+  color: var(--DarkBlue);
+  font-weight: 400;
+}
+.text-title p {
+  width: 60%;
+  font-size: 16px;
+  color: var(--GrayishBlue);
+  font-weight: 400;
+  line-height: 24px;
+  margin: 24px 0px;
+}
+.box-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 5px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.box-icon-container {
+  width: 50px;
+  height: 50px;
+}
+.box-icon-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box-title h3 {
+  font-size: 18px;
+  color: var(--DarkBlue);
+  font-weight: 400;
+  margin: 24px 0;
+}
+.box-desc p {
+  color: var(--GrayishBlue);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
