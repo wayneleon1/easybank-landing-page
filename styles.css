@@ -4,8 +4,8 @@
 :root {
   /* Primary  */
   --DarkBlue: hsl(233, 26%, 24%);
-  --LimeGreen: #31d35c;
-  --BrightCyan: #2bb7da;
+  --LimeGreen: hsl(136, 65%, 51%);
+  --BrightCyan: hsl(192, 70%, 51%);
 
   /* Neutral */
   --GrayishBlue: hsl(233, 8%, 62%);
@@ -214,8 +214,10 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 30px;
+  column-gap: 20px;
 }
 .blog_image {
+  height: 40%;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -246,7 +248,7 @@ nav ul li a:hover {
 }
 .blog_desc {
   color: var(--GrayishBlue);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: normal;
 }
