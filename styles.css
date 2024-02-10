@@ -130,6 +130,7 @@ nav ul li a:hover {
   flex-basis: 50%;
 }
 .hero_typography {
+  align-self: center;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -158,7 +159,7 @@ nav ul li a:hover {
 }
 
 /* Services Section */
-#services {
+#About {
   background: var(--LightGrayishBlue);
 }
 .text-title h2 {
@@ -204,4 +205,48 @@ nav ul li a:hover {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+}
+/* blog section */
+#Blog {
+  background: var(--VeryLightGray);
+}
+.blogs_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+}
+.blog_image {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.blog_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+.blog_body {
+  padding: 20px;
+  background-color: white;
+}
+.blog_body .author {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--GrayishBlue);
+}
+.blog_title {
+  font-size: 18px;
+  color: var(--DarkBlue);
+  font-weight: 400;
+  margin: 12px 0;
+  transition: color 0.4s ease-in-out;
+}
+.blog_title:hover {
+  color: var(--LimeGreen);
+}
+.blog_desc {
+  color: var(--GrayishBlue);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
 }
