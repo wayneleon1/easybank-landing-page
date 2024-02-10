@@ -92,7 +92,7 @@ nav ul li {
 nav ul li::after {
   content: "";
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -123,10 +123,29 @@ nav ul li a:hover {
 /* Hero Section */
 #hero {
   width: 100%;
+  height: 100vh;
   display: flex;
+  background: var(--VeryLightGray);
 }
 #hero > div {
   flex-basis: 50%;
+}
+.hero_typography {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hero_typography h1 {
+  color: var(--DarkBlue);
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 400;
+}
+.hero_typography p {
+  color: var(--GrayishBlue);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 .hero_image-container {
