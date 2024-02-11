@@ -273,6 +273,13 @@ nav ul li a:hover {
   display: flex;
   gap: 10px;
 }
+.social_icons_container svg {
+  fill: white;
+  transition: fill 0.3s ease-in-out;
+}
+.social_icons_container svg:hover {
+  fill: var(--LimeGreen);
+}
 .footer_links ul li {
   font-size: 15px;
   color: var(--LightGrayishBlue);
@@ -288,4 +295,12 @@ nav ul li a:hover {
 }
 .right {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-end;
+}
+.right p {
+  color: var(--LightGrayishBlue);
+  font-size: 16px;
 }
