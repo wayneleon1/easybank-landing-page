@@ -331,7 +331,17 @@ nav ul li a:hover {
 }
 /* responsiveness for Mobile dvices */
 @media screen and (max-width: 375px) {
-  #hero {
+  #hero > div {
+    flex-basis: 100%;
+  }
+  .hero_typography {
+    text-align: center;
+  }
+  .hero_typography p {
+    text-align: justify !important;
+    line-height: 20px;
+  }
+  .hero_image-container {
     display: none;
   }
   #hambugerMenu {
