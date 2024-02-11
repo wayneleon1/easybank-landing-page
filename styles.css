@@ -190,7 +190,7 @@ nav ul li a:hover {
   font-weight: 400;
 }
 .text-title p {
-  width: 60%;
+  width: 50%;
   font-size: 16px;
   color: var(--GrayishBlue);
   font-weight: 400;
@@ -323,6 +323,63 @@ nav ul li a:hover {
   align-items: flex-end;
 }
 .right p {
-  color: var(--LightGrayishBlue);
+  color: var(--White);
   font-size: 16px;
+}
+#hambugerMenu {
+  display: none;
+}
+/* responsiveness for Mobile dvices */
+@media screen and (max-width: 375px) {
+  #hero {
+    display: none;
+  }
+  #hambugerMenu {
+    display: block;
+  }
+  .nav_links_container {
+    display: none;
+  }
+  .btn_container {
+    display: none;
+  }
+  .box-container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+  }
+  .text-title h2 {
+    text-align: center;
+  }
+  .text-title p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .box {
+    align-items: center;
+    text-align: center;
+  }
+  .blogs_container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5px;
+  }
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-info {
+    gap: 20px;
+  }
+  .footer_links {
+    gap: 10px;
+  }
+  .right {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
