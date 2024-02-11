@@ -250,5 +250,42 @@ nav ul li a:hover {
   color: var(--GrayishBlue);
   font-size: 12px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 20px;
+}
+/* footer */
+#footer {
+  background: var(--DarkBlue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.social_icons_container {
+  display: flex;
+  gap: 10px;
+}
+.footer_links ul li {
+  font-size: 15px;
+  color: var(--LightGrayishBlue);
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.footer_links ul li:hover {
+  color: var(--LimeGreen);
+}
+.footer_links ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.right {
+  flex: 1;
 }
